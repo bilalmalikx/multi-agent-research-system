@@ -1,4 +1,4 @@
-from pydentic import BaseModel
+from pydantic import BaseModel
 
 class Settings(BaseModel):
     OPENAI_API_KEY: str
