@@ -1,4 +1,4 @@
-from app.tools.scraper_tool import scrape_url
+from app.tools.scraper_tool import scrape_web_page
 
 def scraper_agent(state):
 
@@ -8,6 +8,6 @@ def scraper_agent(state):
 
     for url in urls:
 
-        data.extend(scrape_url(url))
+        data.extend(scrape_web_page(url))
 
     return {"scraped_data": data}
